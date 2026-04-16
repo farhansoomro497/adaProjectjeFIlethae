@@ -1,0 +1,43 @@
+.maincontainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "Header Header"
+    "sideBar MainContaint"
+    "footer footer";
+        height: 100vh;
+        width: 100vw;
+}
+.Header1{
+    
+    grid-area:Header;
+     
+}
+.sidebar{
+    
+    grid-area: sideBar;
+
+}
+.maincont{
+grid-area: MainContaint;
+
+}
+.divv{
+    background-color: aqua;
+    border: 2px solid orange;
+}
+.footerr{
+    grid-area: footer;
+    
+}
+@media (max-width:800px){
+    .maincontainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:"Header" "sideBar"
+        "MainContaint"
+        "footer" ;
+        
+    }
+
+}
